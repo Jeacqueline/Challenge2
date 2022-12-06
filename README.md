@@ -22,3 +22,6 @@
 
 ![Mock-up](./images/mock-up.png)
 
+![GitHub Jeacqueline (Repository)](https://github.com/Jeacqueline/Challenge2)
+
+
