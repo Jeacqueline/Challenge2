@@ -1,11 +1,14 @@
-/*-----------Jeacqueline Rios----------*/
-/*Para que el documento inicie hasta arriba sin márgenes*/
+/*-------Jeacqueline Rios-------*/
+/*To make the document start up to the top without margins*/
 *{
     margin:0;
     padding:0;
 }
-/*Aquí definí toda la "estructura" que quiero que tenga
-la fuente, el tamaño, fondo y que se justificara*/
+html{
+    scroll-behavior: smooth;
+}
+/*Here I defined all the "structure" that I want the document to have
+the font, the size, the background and that it should be justified**/
 body{
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
@@ -13,12 +16,21 @@ body{
     background-color: #cbebf1;
 }
 
-/*El elemento de header contiene h1, nav, ul, li y a y al header se le agregó su cajita para que se distinga */
+/*The header element contains h1, nav, a and the header has its own little box added to make it more distinguishable*/
 header{
-    height: 100px;
-    width: 100%;
-    line-height:60px;
+    display:flex;
+    justify-content: space-between;
     background-color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 10px;
+}
+#avatar{
+    display:flex;
+    align-items: center;
+}
+#avatar img{
+    height: 100px;
+    margin-right:10px;
 }
 
 h1{
@@ -29,8 +41,7 @@ h1{
 
 nav{
     text-align: right;
-    margin-top: -55px; /*o puede ser -3px para que se siga viendo arriba a la derecha*/
-    margin-right: 15px;
+
 }
 nav a{
     font-weight: 600;
@@ -41,34 +52,34 @@ nav a:hover{
     color:rgb(31, 209, 209)
 }
 
-/*Aquí modifiqué para que se vieran sobre la misma linea*/
+/*Here I modified so that they would be seen on the same line*/
 li,
 a{
     display: inline;
     color:rgb(219, 219, 23);
     text-decoration: none;
 }
-/*son todos los h2 que agregué*/
+/*are all the h2 that I added*/
 h2{
     text-align: left;
     color: black;
     font-size: 40px;
 }
 
-/*todos los titulos de seccion están a la izq.*/
+/*all section headings (About me, Work, Contact me and Resume)are on the left side of the screen*/
 section{
     text-align: left;
 }
-/*aqui todos los div a la derecha, pero falta*/ /*uuhh moví los div id=about,contact,work y resume abajo del h2!!*/
+/*here all divs to the right, but something is missing*/ /*Move the div id=about,contact,work and resume below h2!!!!*/
 div{
     text-align: justify;
     margin-left: 15%;
     margin-bottom: 1rem;
 }
-/*margin-left:25%; para que quede como quiero: el texto a la derecha, los titulos a la izq*/
+/*margin-left:15%; so that it looks the way I want it: text on the right, titles on the left*/
 
 
-/*para agregar las cajas padre usé esto*/
+/*to add the boxes I used this*/
 .text{
     margin-right: 20px;
     background-color: transparent;
@@ -87,22 +98,44 @@ div{
     overscroll-behavior-x: contain;
     scroll-snap-type: mandatory;
     scrollbar-width: none;
+    background-size: cover;
 }
+/*-----------Jeacqueline Rios----------*/
 .card{
-    width: 300px;
-    height: 300px;
+
     color:white;
-    display:inline-block;
-    margin:5px;
+    width: 200px;
+    height: 200px;
+    border:1px solid black;
+    /*background:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(./images/loading.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;*/
 }
 
 #prework{
-    background-image:url("./images/page.png");
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("./images/Prework.png");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #prework:hover{
-    background-image:url("./images/page.png");
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("./images/Prework.png");
     background-repeat: no-repeat;
     width: 800px;
     height: 400px;
@@ -130,7 +163,8 @@ img.resume{
     height:200px;
     border-radius: 20px;
 }
-/*Se agregó su "cajita" al footer */
+/*Added "box" to the footer */
+/*-----------Jeacqueline Rios----------*/
 footer{
     height: 100%;
     width: 100%;
@@ -141,5 +175,10 @@ footer{
 }
 
 @media (max-width:760px){
-  
+  header{
+    flex-direction: column;
+  }
+  nav{
+    padding:10px 0px;
+  }
 }
