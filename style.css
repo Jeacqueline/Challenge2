@@ -97,12 +97,12 @@ div{
 }
 
 #prework{
-    background-image:url("/images/page.png");
+    background-image:url("./images/page.png");
     background-repeat: no-repeat;
 }
 
 #prework:hover{
-    background-image:url("/images/page.png");
+    background-image:url("./images/page.png");
     background-repeat: no-repeat;
     width: 800px;
     height: 400px;
