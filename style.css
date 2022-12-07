@@ -65,7 +65,9 @@ h2{
     color: black;
     font-size: 40px;
 }
-
+p{
+    margin:5%;
+}
 /*all section headings (About me, Work, Contact me and Resume)are on the left side of the screen*/
 section{
     text-align: left;
@@ -108,14 +110,6 @@ div{
     width: 200px;
     height: 200px;
     border:1px solid black;
-    /*background:linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),url(./images/loading.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;*/
 }
 
 #prework{
@@ -156,6 +150,10 @@ img.icon{
     height:40px;
 }
 
+ul{
+    margin-left: 10%;
+
+}
 #resume{
     color:black;
 }
