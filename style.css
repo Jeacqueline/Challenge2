@@ -73,6 +73,10 @@ section{
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    padding: 1rem;
+}
+article{
+    width:100%;
 }
 /*here all divs to the right, but something is missing*/ /*Move the div id=about,contact,work and resume below h2!!!!*/
 div{
@@ -95,7 +99,6 @@ div{
 .projects{
     width: 100%;
     max-width: 1200px; 
-    height: 430px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -166,10 +169,15 @@ ul{
 #resume{
     color:black;
 }
+#resume{
+    display:block;
+    padding:1rem;
+}
 img.resume{
     width:200px;
     height:200px;
     border-radius: 20px;
+    padding:1rem;
 }
 /*Added "box" to the footer */
 /*-----------Jeacqueline Rios----------*/
