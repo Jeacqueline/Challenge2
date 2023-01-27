@@ -128,7 +128,7 @@ div{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url(./images/Prework.png);
+    ), url(./images/tecnologico-de-Monterrey.jpeg);
     background-size:cover;
 }
 .prework:hover{
@@ -136,7 +136,7 @@ div{
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
-    ), url(./images/Prework.png);
+    ), url(./images/tecnologico-de-Monterrey.jpeg);
     background-size:cover;
     width: 430px;
     height: 530px;
@@ -147,14 +147,34 @@ div{
 
 }
 
+/*Project Aircast*/
+.aircast{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(./images/project1.png);
+    background-size:cover;
+}
+.aircast:hover{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(./images/project1.png);
+    background-size:cover;
+    width: 430px;
+    height: 530px;
+}
+
 #project1{
     font-size: 20px;
-    color:blueviolet;
+    color:rgb(43, 226, 220);
     text-decoration: none;
 }
 #project1:hover{
     font-size: 40px;
-    color:blue;
+    color:rgb(99, 202, 220);
 }
 
 img.icon{
