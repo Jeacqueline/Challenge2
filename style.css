@@ -167,6 +167,26 @@ div{
     height: 530px;
 }
 
+/*Project Sabores Do Mundo*/
+.sabores{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(./images/project2.jpeg);
+    background-size:cover;
+}
+.sabores:hover{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(./images/project2.jpeg);
+    background-size:cover;
+    width: 430px;
+    height: 530px;
+}
+
 #project1{
     font-size: 20px;
     color:rgb(43, 226, 220);
